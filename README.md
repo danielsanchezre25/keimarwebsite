@@ -1,7 +1,7 @@
 
   # Keimar Website
 
-  This is a code bundle for Keimar Website.
+  This is a code bundle for Keimar Website. The original project is available at https://www.figma.com/design/d5UUUNh5H4zRDVhDC7kVwT/Portfolio-Parallax-Design.
 
   ## Running the code
 
