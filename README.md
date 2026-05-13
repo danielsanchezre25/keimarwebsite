@@ -1,7 +1,7 @@
 
-  # Portfolio Parallax Design
+  # Keimar Website
 
-  This is a code bundle for Portfolio Parallax Design. The original project is available at https://www.figma.com/design/d5UUUNh5H4zRDVhDC7kVwT/Portfolio-Parallax-Design.
+  This is a code bundle for Keimar Website.
 
   ## Running the code
 
