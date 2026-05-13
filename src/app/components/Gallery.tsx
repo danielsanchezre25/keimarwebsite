@@ -1,22 +1,19 @@
 import { motion } from 'motion/react';
 import { useInView } from 'motion/react';
+import keimarDrawingOne from '../../imports/keimardraw1.png';
+import keimarDrawingTwo from '../../imports/keimardraw2.png';
+import keimarDrawingThree from '../../imports/keimardraw3.png';
 import { useRef } from 'react';
 
 const collections = [
   {
-    title: 'Colección Primavera',
+    title: 'Colección Principal',
     description: 'Diseños florales y colores vibrantes que celebran el renacimiento de la naturaleza.',
-    items: 3,
-  },
-  {
-    title: 'Colección Abstracta',
-    description: 'Formas y colores que expresan emociones y movimientos únicos.',
-    items: 4,
-  },
-  {
-    title: 'Colección Minimalista',
-    description: 'Simplicidad elegante con líneas limpias y paletas neutras.',
-    items: 3,
+    items: [
+      { image: keimarDrawingOne },
+      { image: keimarDrawingTwo },
+      { image: keimarDrawingThree },
+    ],
   },
 ];
 
@@ -55,17 +52,24 @@ export function Gallery() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  {Array.from({ length: collection.items }).map((_, i) => (
+                  {collection.items.map((item, i) => (
                     <div
                       key={i}
                       className="aspect-[3/4] bg-[#f5f0ed] rounded-sm overflow-hidden group cursor-pointer"
                     >
                       <div className="w-full h-full flex items-center justify-center text-[#d4a5a5] group-hover:scale-105 transition-transform duration-300">
-                        <div className="text-center">
-                          <svg
-                            className="w-16 h-16 mx-auto mb-4"
-                            fill="none"
-                            stroke="currentColor"
+                        {item.image ? (
+                          <img
+                            src={item.image}
+                            alt={`Diseño ${i + 1}`}
+                            className="w-full h-full object-cover"
+                          />
+                        ) : (
+                          <div className="text-center">
+                            <svg
+                              className="w-16 h-16 mx-auto mb-4"
+                              fill="none"
+                              stroke="currentColor"
                             viewBox="0 0 24 24"
                           >
                             <path
@@ -77,6 +81,7 @@ export function Gallery() {
                           </svg>
                           <p className="text-sm">Diseño {i + 1}</p>
                         </div>
+                        )}
                       </div>
                     </div>
                   ))}
