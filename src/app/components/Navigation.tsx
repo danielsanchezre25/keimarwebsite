@@ -43,19 +43,19 @@ export function Navigation() {
             onClick={() => scrollToSection('about')}
             className="text-[#1a1a1a] hover:text-[#b88888] transition-colors duration-200"
           >
-            About
+            Historia
           </button>
           <button
             onClick={() => scrollToSection('gallery')}
             className="text-[#1a1a1a] hover:text-[#b88888] transition-colors duration-200"
           >
-            Gallery
+            Colecciones
           </button>
           <button
             onClick={() => scrollToSection('contact')}
             className="px-6 py-2 bg-[#d4a5a5] text-white hover:bg-[#b88888] transition-colors duration-200 rounded-sm"
           >
-            Contact
+            Contacto
           </button>
         </div>
       </div>
