@@ -8,7 +8,7 @@ import { useRef } from 'react';
 const collections = [
   {
     title: 'Colección Principal',
-    description: 'Diseños florales y colores vibrantes que celebran el renacimiento de la naturaleza.',
+    description: 'Diseños únicos y colores vibrantes que celebran tu identidad.',
     items: [
       { image: keimarDrawingOne },
       { image: keimarDrawingTwo },
